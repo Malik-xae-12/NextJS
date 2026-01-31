@@ -1,7 +1,7 @@
 const contact = async()=>{
 
     return(
-        <h1>conatact</h1>
+        <h1>i am contact</h1>
     )
 }
 

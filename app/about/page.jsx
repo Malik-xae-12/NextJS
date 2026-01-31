@@ -1,6 +1,6 @@
 const About = async ()=>{
     return (
-        <h1>About Page</h1>
+        <h1>i am about</h1>
     )
 }
 
