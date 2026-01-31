@@ -1,7 +1,7 @@
 const contact = async()=>{
 
     return(
-        <h1>i am contact</h1>
+        <h1 className="common_heading">i am contact</h1>
     )
 }
 
