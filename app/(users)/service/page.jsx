@@ -4,4 +4,4 @@ const service = async()=>{
     )
 }
 
-export default service
+export default service          
