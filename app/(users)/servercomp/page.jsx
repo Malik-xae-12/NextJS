@@ -1,9 +1,20 @@
 
 const servercomp = async()=>{
-    return(
+    const res= await fetch("https://jsonplaceholder.typicode.com/posts")
+    const data = await res.json()
+    console.log(data)
+     return(
         <>
-        <h1>i am server</h1>
-        <button className="bg-red-500 text-white" onClick={()=>alert("hello")}>click me</button>
+        <h1>server comp</h1>
+        <ul className="grid grid-cols-4 gap-4">
+            {
+                data.map((post)=>{
+                    return(
+                        <li key={post.id}>{post.title}</li>
+                    )
+                })
+            }
+        </ul>
         </>
     )
 }

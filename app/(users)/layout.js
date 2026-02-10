@@ -40,6 +40,6 @@ export default function RootLayout({ children }) {
         <Navigation/>
         {children}
       </body>
-    </html>
+    </html> 
   );
 }
