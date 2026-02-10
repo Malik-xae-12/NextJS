@@ -1,6 +1,15 @@
 import Image from "next/image";
 import demoImage from "@/public/image.png";
 
+export const metadata ={
+  title:"service page",
+  description : "service page description",
+  authors : [{name:"malik"},{name:"saif" ,url:"https://google.com"}],
+  keywords:["next js","react js","web development"]
+  
+
+}
+
 export default function ImageDemoPage() {
   return (
     <div style={{ padding: "20px", maxWidth: "800px", backgroundColor: "#d59c9c" }}>

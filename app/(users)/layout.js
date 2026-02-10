@@ -6,10 +6,12 @@ import { Work_Sans } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
+  variable:"--font-roboto",
 })
 
 const workSans = Work_Sans({
   subsets: ["latin"],
+  variable: "--font-work-sans",
 })
 
 
@@ -31,9 +33,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
       <body
-        className={`${roboto.className} ${workSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${roboto.variable} ${workSans.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navigation/>
         {children}
