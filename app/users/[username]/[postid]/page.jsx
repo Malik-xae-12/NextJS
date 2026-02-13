@@ -1,13 +1,15 @@
-const post = async(props)=>{
-    console.log(props)
-    const post = await props.params
-    console.log(post)
-    return(
-        <>
-        <h1>hello {post.username}</h1>
-        <p>post id : {post.postid}</p>
-        </>
-    )
-}
+"use client"
 
-export default post
+import { use } from "react"
+
+export default function Post({ params }) {
+
+  const { username, postid } = use(params)
+
+  return (
+    <>
+      <h1>Hello {username}</h1>
+      <p>Post ID: {postid}</p>
+    </>
+  )
+}

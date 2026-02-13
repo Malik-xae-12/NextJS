@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Counter from "./counter"
 
 // we can use the dynamic route segments only in server components
+// we can use the client components in server components but not server components in client components
 
 const clientcomp = ()=>{
    const [postData,setPostData] = useState([]);
