@@ -1,12 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
-import Navigation  from "@/components/Navigation";
-import {Roboto} from "next/font/google";
+import Navigation from "@/components/Navigation";
+import { Roboto } from "next/font/google";
 import { Work_Sans } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  variable:"--font-roboto",
+  variable: "--font-roboto",
 })
 
 const workSans = Work_Sans({
@@ -37,9 +37,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.variable} ${workSans.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navigation/>
+        <Navigation />
         {children}
       </body>
-    </html> 
+    </html>
   );
 }
